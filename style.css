@@ -1,0 +1,65 @@
+/* Style for paragraphs */
+p {
+    font-size: 20px; /* Sets the font size of paragraphs */
+    font-family: 'garamond'; /* Sets the font family to Garamond */
+    text-align: center; /* Centers the text within the paragraph */
+}
+
+/* Style for the main heading (h1) */
+h1 {
+    font-size: 40px; /* Sets the font size of the h1 heading */
+    font-family: 'garamond'; /* Uses Garamond font family for the heading */
+    text-align: center; /* Centers the heading text */
+}
+
+/* Body background color */
+body {
+    background-color: #E8CCBF; /* Sets the background color of the page */
+}
+
+/* Main content section styling */
+main {
+    background-color: #CFB9A5; /* Sets the background color of the main content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the main content */
+}
+
+/* Footer styling */
+footer {
+    background-color: #E8CCBF; /* Sets the footer background color */
+    text-align: center; /* Centers the footer text */
+}
+
+/* Image styling */
+img {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Navigation bar styling */
+header nav {
+    display: flex; /* Uses flexbox layout for the navigation bar */
+    justify-content: space-around; /* Spreads out the navigation links evenly */
+    background-color: #CFB9A5; /* Sets the background color of the navigation bar */
+    padding: 10px 20px; /* Adds padding inside the navigation bar */
+    border-radius: 8px; /* Rounds the corners of the navigation bar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the navigation bar */
+}
+
+/* Styling for individual navigation links */
+header nav a {
+    text-decoration: none; /* Removes underline from the links */
+    color: #000000; /* Sets the text color of the links to black */
+    font-size: 15px; /* Sets the font size for the links */
+    font-weight: bold; /* Makes the links bold */
+    font-family: garamond; /* Sets the font family for the links */
+    padding: 8px 12px; /* Adds padding inside the links */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background changes on hover */
+    border-radius: 5px; /* Rounds the corners of the links */
+    text-align: center; /* Centers the link text */
+}
+
+
+/* Hover effect for links */
+header nav a:hover {
+    color: white; /* Text changes to white */
+}
