@@ -14,7 +14,7 @@ h1 {
 
 /* Body background color */
 body {
-    background-image: url('backgroundphoto.jpg'); /* Sets the background color of the page */
+    background-image: url('Images/backgroundphoto.jpg'); /* Sets the background color of the page */
 }
 
 
@@ -57,9 +57,9 @@ header nav a {
 /* Hover effect for links */
 header nav a:hover {
     color: white; /* Text changes to white */
-    cursor: url('hand-pointer.png'), auto;
+    cursor: url('Images/hand-pointer.png'), auto;
 }
 
 html {
-    cursor: url('heart-outline.png'), auto;
+    cursor: url('Images/hand-pointer.png'), auto;
 }
