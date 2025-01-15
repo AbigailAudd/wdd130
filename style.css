@@ -14,19 +14,14 @@ h1 {
 
 /* Body background color */
 body {
-    background-color: #E8CCBF; /* Sets the background color of the page */
+    background-image: url('backgroundphoto.jpg'); /* Sets the background color of the page */
 }
+
 
 /* Main content section styling */
 main {
-    background-color: #CFB9A5; /* Sets the background color of the main content */
+    background-color: #c0c5c9; /* Sets the background color of the main content */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the main content */
-}
-
-/* Footer styling */
-footer {
-    background-color: #E8CCBF; /* Sets the footer background color */
-    text-align: center; /* Centers the footer text */
 }
 
 /* Image styling */
@@ -39,7 +34,7 @@ img {
 header nav {
     display: flex; /* Uses flexbox layout for the navigation bar */
     justify-content: space-around; /* Spreads out the navigation links evenly */
-    background-color: #CFB9A5; /* Sets the background color of the navigation bar */
+    background-color: #c2c8ac; /* Sets the background color of the navigation bar */
     padding: 10px 20px; /* Adds padding inside the navigation bar */
     border-radius: 8px; /* Rounds the corners of the navigation bar */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the navigation bar */
@@ -62,4 +57,9 @@ header nav a {
 /* Hover effect for links */
 header nav a:hover {
     color: white; /* Text changes to white */
+    cursor: url('hand-pointer.png'), auto;
+}
+
+html {
+    cursor: url('heart-outline.png'), auto;
 }
