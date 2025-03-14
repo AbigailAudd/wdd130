@@ -19,21 +19,21 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-
+        <div id="feedback" style="display: none;"></div>
         <main>
-                <h1>Contact Us</h1>
-                <form action="thankyou.html" class="contact-form">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname">
+            <h1>Contact Us</h1>
+            <form class="contact-form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required>
 
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required>
 
-                    <label for="comment_box">Leave a comment</label>
-                    <textarea name="comment_box" id="comment_box"></textarea>
+                <label for="comment_box">Leave a comment</label>
+                <textarea name="comment_box" id="comment_box" required></textarea>
 
-                    <button type="submit">Request Info</button>
-                </form>
+                <button type="submit">Request Info</button>
+            </form>
         </main>
 
         <footer>
@@ -53,5 +53,28 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Get elements
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.querySelector('.contact-form');
+
+        // Add submit event listener
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get input values
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+
+            // Show feedback message
+            feedbackElement.innerHTML = `Hello ${firstName} ${lastName}! Thank you for your message. We will get back to you as soon as possible!`;
+            feedbackElement.style.display = "block";
+            feedbackElement.style.padding = "10px";
+            feedbackElement.style.backgroundColor = "#dff0d8";
+            feedbackElement.style.border = "1px solid #3c763d";
+            feedbackElement.style.color = "#3c763d";
+            feedbackElement.style.marginTop = "10px";
+        });
+    </script>
 </body>
 </html>
