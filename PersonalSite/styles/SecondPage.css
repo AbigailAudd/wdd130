@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Roboto+Condensed&display=swap');
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color:#709879;
+    justify-items: center;
+    align-items: stretch;
+}
+h1 {
+    font-family: "Emilys Candy";
+    font-size: 50px;
+    color: #FDE8E9;
+}
+.logo {
+    width: 150px;
+    grid-column: 3/4;
+}
+nav {
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+body {
+    margin: 0;
+}
+
+footer {
+    background-color: #709879;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer p {
+    font-family: 'Emilys Candy';
+    color: #FDE8E9;
+    justify-self: center;
+}

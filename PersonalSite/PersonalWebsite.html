@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail's Cookbook</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/HomePage.css">
 </head>
 <body>
     <header>
-        <h1>Abigail's Cookbook</h1>
-        <img src="images/Abigail’s.jpg" alt="Logo">
+        <h1>Home Page</h1>
         <nav>
-            <ul>
-                <li><a href="PersonalWebsite.html">Home</a></li>
-                <li><a href="dinners.html">Dinners</a></li>
-                <li><a href="desserts.html">Desserts</a></li>
-                <li><a href="breads.html">Breads</a></li>
-            </ul>
+            <a href="PersonalWebsite.html">
+                <img src="images/Abigail's.png" alt="Logo" class="logo">
+            </a>
         </nav>
     </header>
     
     <main>
         <section id="home">
-            <h2>Welcome to Abigail's Cookbook</h2>
             <div class="image-gallery">
-                <img src="images/Dessert.jpg" alt="Dessert">
-                <img src="images/Dough.jpg" alt="Breads">
-                <img src="images/Dinner.jpg" alt="Dinners">
+                <a href="dinners.html" class="image-container">
+                    <img src="images/Dinner.jpg" alt="Dinners">
+                    <span class="image-label">Dinners</span>
+                </a>
+                <a href="desserts.html" class="image-container">
+                    <img src="images/Dessert.jpg" alt="Dessert">
+                    <span class="image-label">Desserts</span>
+                </a>
+                <a href="breads.html" class="image-container">
+                    <img src="images/Dough.jpg" alt="Breads">
+                    <span class="image-label">Breads</span>
+                </a>
             </div>
         </section>
     </main>
     
     <footer>
         <p>&copy; 2025 Abigail Smith | WDD 130-1</p>
+        <a href="site-plan.html">Site Plan</a>
     </footer>
 </body>
 </html>
