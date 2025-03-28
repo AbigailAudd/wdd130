@@ -12,6 +12,7 @@ h1 {
     font-family: "Emilys Candy";
     font-size: 50px;
     color: #FDE8E9;
+    font-weight: lighter;
 }
 .logo {
     width: 150px;
@@ -25,7 +26,16 @@ body {
     margin: 0;
 }
 
+
 footer {
+    background-color: #709879;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #709879;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -34,4 +44,17 @@ footer p {
     font-family: 'Emilys Candy';
     color: #FDE8E9;
     justify-self: center;
+    grid-column: 2/3;
+}
+footer a {
+    grid-column: 3/4;
+    text-decoration: none;
+    font-family: 'Emilys Candy';
+    color: #FDE8E9;
+    justify-self: center;
+    align-self: center;
+}   
+footer a:hover {
+    background-color: #FDE8E9;
+    color: #709879;
 }
