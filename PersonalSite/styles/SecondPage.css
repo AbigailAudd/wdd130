@@ -1,51 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Roboto+Condensed&display=swap');
 
+
+
+body {
+    margin: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-color: #FDE8E9;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color:#709879;
+    background-color: #709879;
     justify-items: center;
     align-items: stretch;
 }
+
 h1 {
     font-family: "Emilys Candy";
     font-size: 50px;
     color: #FDE8E9;
     font-weight: lighter;
 }
+
 .logo {
     width: 150px;
     grid-column: 3/4;
 }
+
 nav {
     grid-column: 1/2;
     grid-row: 1/1;
 }
-body {
-    margin: 0;
-}
 
-
+/* Footer Layout */
 footer {
     background-color: #709879;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #709879;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
+
 footer p {
     font-family: 'Emilys Candy';
     color: #FDE8E9;
     justify-self: center;
     grid-column: 2/3;
 }
+
 footer a {
     grid-column: 3/4;
     text-decoration: none;
@@ -53,8 +60,47 @@ footer a {
     color: #FDE8E9;
     justify-self: center;
     align-self: center;
-}   
+}
+
 footer a:hover {
     background-color: #FDE8E9;
     color: #709879;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    gap: 20px; 
+}
+
+a.button {
+    text-decoration: none; 
+    font-family: 'Emilys Candy';
+    color: white; 
+    background-color: #7B5E7B; 
+    padding: 15px 30px; 
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center; 
+    margin: 10px 0; 
+    width: 250px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+a.button:hover {
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow to make it pop */
+}
+
+a.button:active {
+    transform: scale(1); /* Reset to normal size when clicked */
+}
+
+@media screen and (max-width: 810px) {
+    main {
+        flex-direction: column;
+    }
 }
