@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Roboto+Condensed&display=swap');
+
+
+
+main {
+    flex-grow: 1;
+    text-align: center; /* Center all text in the main content */
+    padding: 20px;
+}
+.goback {
+    text-decoration: none; 
+    font-family: 'Emilys Candy';
+    color: white; 
+    background-color: #7B5E7B; 
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center; 
+    margin: 10px 0; 
+    width: 200px; 
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDE8E9;
+    text-align: center; /* Center all text */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #709879;
+    justify-items: center;
+    align-items: stretch;
+    text-align: center; /* Center text within header */
+}
+
+h1 {
+    font-family: "Emilys Candy";
+    font-size: 50px;
+    color: #FDE8E9;
+    font-weight: lighter;
+    text-align: center; /* Ensure h1 is centered */
+}
+
+.logo {
+    width: 150px;
+    grid-column: 3/4;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+
+
+/* Footer Layout */
+footer {
+    background-color: #709879;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #709879;
+}
+
+footer p {
+    font-family: 'Emilys Candy';
+    color: #FDE8E9;
+    justify-self: center;
+    grid-column: 2/3;
+}
+
+footer a {
+    grid-column: 3/4;
+    text-decoration: none;
+    font-family: 'Emilys Candy';
+    color: #FDE8E9;
+    justify-self: center;
+    align-self: center;
+}
+
+footer a:hover {
+    background-color: #FDE8E9;
+    color: #709879;
+}
+
+
+ul, ol {
+    display: inline-block; /* Makes the list an inline-block so it's centered */
+    text-align: left; /* Align text left within each list item */
+    padding-left: 0; /* Remove default padding for lists */
+    margin: 0 auto; /* Center the list itself */
+}
+
+li {
+    display: list-item; /* Ensure list items behave as expected */
+    text-align: left; /* Align text inside the list items to the left */
+}
